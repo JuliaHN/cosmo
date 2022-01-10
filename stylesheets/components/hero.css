@@ -1,0 +1,25 @@
+.hero {
+  background-repeat: no-repeat;
+  background-image: url("https://picsum.photos/1600/768");
+  background-size: cover;
+}
+.hero__content {
+  max-width: 588px;
+  padding: 157px var(--spacing-xxl);
+
+  color: var(--white);
+}
+.hero__title {
+  margin: 0px;
+
+  font-size: 42px;
+  line-height: 42px;
+  letter-spacing: 2px;
+}
+.hero__text {
+  margin-top: var(--spacing-md);
+}
+
+.hero__button {
+  margin-top: var(--spacing-md);
+}

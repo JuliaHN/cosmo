@@ -1,0 +1,14 @@
+.header {
+  grid-area: header;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: var(--spacing-sm) var(--spacing-xxl);
+}
+.header__item {
+  display: inline-block;
+  margin-left: var(--spacing-xl);
+}
+.header__logo {
+  justify-self: start;
+}

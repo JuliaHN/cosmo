@@ -1,0 +1,18 @@
+.article {
+  padding-bottom: 0px;
+}
+.article__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 24px;
+  padding: 0px;
+}
+.article__item {
+  display: grid;
+  grid-row-gap: 10px;
+}
+.article__title {
+  margin: 0px;
+
+  font-size: var(--font-size-md);
+}

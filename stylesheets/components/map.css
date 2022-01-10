@@ -1,0 +1,17 @@
+.map {
+
+}
+.map__address {
+  margin-top: var(--spacing-md);
+
+  font-style: normal;
+}
+.map__title {
+  margin-top: var(--spacing-md);
+
+  font-size: var(--font-size-md);
+  line-height: 24px;
+}
+.map__text {
+  margin-top: var(--spacing-xs);
+}

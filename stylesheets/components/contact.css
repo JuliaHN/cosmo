@@ -1,0 +1,12 @@
+.contact {
+  background-color: var(--gray-100);
+  background-image: none;
+}
+.contact__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 24px;
+
+  padding-top: 88px;
+  padding-bottom: 88px;
+}

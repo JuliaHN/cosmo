@@ -1,0 +1,39 @@
+.banner {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+
+  background-repeat: no-repeat;
+  background-image: url("https://picsum.photos/1600/768");
+  background-size: cover;
+}
+.banner__content {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 40px;
+
+  padding: 164px 0px;
+}
+.banner__title {
+  max-width: 480px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-top: auto;
+
+  color: var(--white);
+}
+.banner__actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 24px;
+}
+.banner__action_primary {
+  justify-self: end;
+}
+.banner__action_secondary {
+  width: fit-content;
+
+  border: 1px solid var(--gray-800);
+  background-color: var(--white);
+  color: var(--gray-800);
+}
