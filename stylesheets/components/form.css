@@ -35,7 +35,7 @@
   height: 128px;
   width: 385px;
   padding: 11px;
-  resize: none;
+  resize: vertical;
 }
 .form__button {
   margin-top: var(--spacing-lg);

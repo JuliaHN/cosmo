@@ -18,10 +18,13 @@
 }
 .blog__extra {
   display:grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 2fr 18px 27%;
   margin-top: var(--spacing-lg);
+  grid-column-gap: 10px;
 }
 .blog__icon {
   justify-self: end;
-  padding-right: 10px;
+}
+.blog__comments {
+  justify-self: end;
 }
