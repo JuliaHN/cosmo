@@ -4,7 +4,7 @@
   justify-items: center;
 
   background-repeat: no-repeat;
-  background-image: url("https://picsum.photos/1600/768");
+  background-image: url("../../public/images/banner.jpg");
   background-size: cover;
 }
 .banner__content {

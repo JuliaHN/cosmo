@@ -46,7 +46,8 @@
   margin: 0px;
 
   text-align: right;
-
+}
+.footer__link {
   color: var(--white);
 }
 .footer__socials{

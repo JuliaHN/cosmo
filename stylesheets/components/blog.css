@@ -2,6 +2,10 @@
   display: grid;
   grid-row-gap: 40px;
 }
+.blog__image {
+  width: 384px;
+  height: 216px;
+}
 .blog__item {
   padding: var(--spacing-md);
 }

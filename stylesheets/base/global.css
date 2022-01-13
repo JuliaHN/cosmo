@@ -72,6 +72,7 @@ h2, h3 {
   justify-self: start;
   padding: 8px 22px;
   width: max-content;
+  height: 36px;
 
   color: var(--white);
   background-color: var(--gray-500);
