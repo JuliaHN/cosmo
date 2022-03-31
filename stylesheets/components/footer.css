@@ -2,17 +2,41 @@
   grid-area: footer;
 
   background-color: var(--gray-800);
-}
-.footer__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 
-  margin: 88px var(--spacing-xxl);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 88px var(--spacing-xxl);
+}
+/*.footer__content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /*display: grid;
+
+  grid-template-columns: repeat(2, [col-start] 1fr);
+  grid-template-rows: repeat(2, [row-start] 1fr);
+
+  /*grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  justify-content: center;
+  align-self: center;
+  width: auto;*/
+
+  /*margin: 88px var(--spacing-xxl);
+}
+*/
+.footer__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .footer__content_left {
-  display: grid;
-  grid-template-columns: 102px 196px;
-  grid-column-gap: 20px;
+  /*display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 20px;*/
+
+  display: flex;
+  flex-wrap: wrap;
 
   justify-self: start;
   align-self: end;
@@ -24,6 +48,8 @@
 .footer__logo {
   padding-top: 7px;
   height: 36px;
+  width: 102px;
+  margin-right: 20px;
 
   text-align: center;
 
@@ -31,6 +57,7 @@
   line-height: 28px;
 }
 .footer__text {
+  width: 196px;
   font-size: var(--font-size-xs);
   line-height: 16px;
   color: var(--white);
@@ -38,20 +65,47 @@
 .footer__bottom_text {
   text-transform: uppercase;
 }
-.footer__list {
+/*.footer__list {
   display: grid;
-  grid-template-columns: 73px 73px 73px 74px;
+  justify-content: right;
+  align-content: center;
+  grid-auto-flow: column;
+  grid-gap: 41px;
+  grid-template-columns:  repeat(auto-fit, minmax(100px, 1fr));
   grid-column-gap: 41px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 41px;s
+
   padding: 0px;
   margin: 0px;
 
   text-align: right;
-}
+}*/
 .footer__link {
   color: var(--white);
+  margin-left: 21px;
 }
-.footer__socials{
-  grid-template-columns: 18px 18px 18px 18px;
-  grid-column-gap: 20px;
+.footer__menu {
+  padding: 0px;
+  margin: 0px;
+}
+.footer__item {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer__socials {
   margin-top: var(--spacing-lg);
+
+  /*display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;*/
+}
+/* Mobile to Tablet  */
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer__content {
+    margin: auto;
+  }
 }

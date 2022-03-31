@@ -1,5 +1,6 @@
 .banner {
   display: grid;
+  grid-column: col-start / span 12;
   grid-template-columns: 1fr;
   justify-items: center;
 

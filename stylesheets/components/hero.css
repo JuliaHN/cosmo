@@ -1,4 +1,6 @@
 .hero {
+  grid-column: col-start / span 12;
+
   background-repeat: no-repeat;
   background-image: url("../../public/images/hero.jpg");
   background-size: cover;

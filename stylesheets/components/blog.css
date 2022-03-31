@@ -1,9 +1,10 @@
 .blog {
   display: grid;
+  grid-column: col-start / span 12;
   grid-row-gap: 40px;
 }
 .blog__image {
-  width: 384px;
+  width: 375px;
   height: 216px;
 }
 .blog__item {
@@ -17,6 +18,8 @@
 }
 .blog__text {
   margin-top: var(--spacing-xs);
+  max-width: 375px;
+  width: auto;
 
   color: var(--gray-800);
 }

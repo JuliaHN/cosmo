@@ -1,19 +1,25 @@
 .form {
-
+  /*max-width: 588px;
+  min-width: 375px;*/
+  width: 100%;
 }
 .form__title {
   font-size: var(--font-size-xl);
   line-height: 32px;
+  width: fit-content;
 
   color: var(--gray-800);
 }
 .form__text {
-  min-width: 588px;
+  max-width: 588px;
+  min-width: 75%;
+  width: auto;
   margin-top: var(--spacing-xs);
 }
 .form__content {
   display: grid;
   grid-row-gap: 20px;
+  width: 100%;
   margin-top: var(--spacing-lg);
 }
 .form__item {
@@ -33,7 +39,9 @@
 }
 .form__message {
   height: 128px;
-  width: 385px;
+  max-width: 385px;
+  min-width: 280px;
+  width: auto;
   padding: 11px;
   resize: vertical;
 }
