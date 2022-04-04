@@ -8,33 +8,12 @@
   flex-direction: column;
   padding: 88px var(--spacing-xxl);
 }
-/*.footer__content {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  /*display: grid;
-
-  grid-template-columns: repeat(2, [col-start] 1fr);
-  grid-template-rows: repeat(2, [row-start] 1fr);
-
-  /*grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  justify-content: center;
-  align-self: center;
-  width: auto;*/
-
-  /*margin: 88px var(--spacing-xxl);
-}
-*/
 .footer__content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .footer__content_left {
-  /*display: grid;
-  grid-auto-flow: column;
-  grid-column-gap: 20px;*/
-
   display: flex;
   flex-wrap: wrap;
 
@@ -65,24 +44,6 @@
 .footer__bottom_text {
   text-transform: uppercase;
 }
-/*.footer__list {
-  display: grid;
-  justify-content: right;
-  align-content: center;
-  grid-auto-flow: column;
-  grid-gap: 41px;
-  grid-template-columns:  repeat(auto-fit, minmax(100px, 1fr));
-  grid-column-gap: 41px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 41px;s
-
-  padding: 0px;
-  margin: 0px;
-
-  text-align: right;
-}*/
 .footer__link {
   color: var(--white);
   margin-left: 21px;
@@ -97,15 +58,40 @@
 }
 .footer__socials {
   margin-top: var(--spacing-lg);
-
-  /*display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;*/
 }
-/* Mobile to Tablet  */
+
 @media (min-width: 320px) and (max-width: 767px) {
+  .footer {
+    padding: var(--spacing-lg);
+  }
   .footer__content {
     margin: auto;
+  }
+  .footer__content_left {
+    flex-wrap: nowrap;
+  }
+  .footer__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+  }
+  .footer__link {
+    margin-left: 0px;
+  }
+  .footer__item {
+    margin: 0px;
+  }
+  .footer__socials {
+    flex-direction: row;
+    padding-top: var(--spacing-md);
+    margin-top: 0px;
+  }
+  .footer__logo {
+    height: 27px;
+    width: 85px;
+    padding-top: 2px;
+    margin-right: var(--spacing-sm);
   }
 }

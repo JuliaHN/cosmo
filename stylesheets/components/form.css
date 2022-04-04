@@ -1,6 +1,4 @@
 .form {
-  /*max-width: 588px;
-  min-width: 375px;*/
   width: 100%;
 }
 .form__title {
@@ -64,4 +62,20 @@
   background-image: url("../../public/icons/caret-bottom.svg");
   background-repeat: no-repeat;
   background-position: calc(100% - 9px) center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .form {
+    margin: var(--spacing-xl);
+    max-width: 767px;
+    min-width: 320px;
+    width: auto;
+  }
+  .form__text {
+    max-width: 275px;
+  }
+  .form__message {
+    max-width: 275px;
+    min-width: 250px;
+    width: auto;
+  }
 }

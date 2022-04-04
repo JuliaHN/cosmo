@@ -1,6 +1,4 @@
 .map {
-  /*max-width: 588px;
-  min-width: 375px;*/
   width: 100%;
 }
 .map__image {
@@ -26,4 +24,16 @@
   min-width: 75%;
   width: auto;
   margin-top: var(--spacing-xs);
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .map {
+    padding: var(--spacing-xl);
+    padding-top: 0px;
+    width: auto;
+  }
+  .map__image,
+  .map__text {
+    width: 275px;
+    height: auto;
+  }
 }

@@ -25,7 +25,7 @@
 }
 .blog__extra {
   display:grid;
-  grid-template-columns: 2fr 18px 27%;
+  grid-template-columns: 1fr 18px 27%;
   margin-top: var(--spacing-lg);
   grid-column-gap: 10px;
 }
@@ -34,4 +34,17 @@
 }
 .blog__comments {
   justify-self: end;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .blog__image {
+    max-width: 275px;
+    height: auto;
+  }
+  .blog__item {
+    padding: 0px;
+  }
+  .blog__extra {
+    grid-template-columns: 1fr 18px 33%;
+    margin-top: var(--spacing-md);
+  }
 }

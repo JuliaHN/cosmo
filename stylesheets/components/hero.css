@@ -21,7 +21,14 @@
 .hero__text {
   margin-top: var(--spacing-md);
 }
-
 .hero__button {
   margin-top: var(--spacing-md);
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+
+    padding: var(--spacing-xl);
+  }
 }
