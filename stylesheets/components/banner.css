@@ -40,6 +40,9 @@
   background-color: var(--white);
   color: var(--gray-800);
 }
+.banner__action_secondary:hover {
+  background-color: var(--gray-200);
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .banner__content {
    padding: 25px 0px;

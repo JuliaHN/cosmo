@@ -1,9 +1,8 @@
 .map {
-  width: 100%;
+  width: fit-content;
 }
 .map__image {
   max-width: 100%;
-  min-width: 75%;
   width: auto;
   height: auto;
 }
@@ -27,13 +26,8 @@
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .map {
-    padding: var(--spacing-xl);
-    padding-top: 0px;
+    padding: 0px;
+    padding-bottom: var(--spacing-xl);
     width: auto;
-  }
-  .map__image,
-  .map__text {
-    width: 275px;
-    height: auto;
   }
 }

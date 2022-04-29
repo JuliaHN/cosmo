@@ -1,5 +1,5 @@
 .form {
-  width: 100%;
+  width: fit-content;
 }
 .form__title {
   font-size: var(--font-size-xl);
@@ -37,11 +37,11 @@
 }
 .form__message {
   height: 128px;
-  max-width: 385px;
-  min-width: 280px;
-  width: auto;
-  padding: 11px;
+  width: 385px;
+  padding: var(--spacing-xs);
   resize: vertical;
+  border-color: var(--black);
+  border-radius: 0px;
 }
 .form__button {
   margin-top: var(--spacing-lg);
@@ -63,19 +63,22 @@
   background-repeat: no-repeat;
   background-position: calc(100% - 9px) center;
 }
+@media (max-width: 1200px) {
+  .form {
+    padding: var(--spacing-xl) 0px;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .form {
-    margin: var(--spacing-xl);
     max-width: 767px;
-    min-width: 320px;
+    min-width: 250px;
     width: auto;
   }
   .form__text {
-    max-width: 275px;
+    max-width: 250px;
   }
   .form__message {
-    max-width: 275px;
-    min-width: 250px;
-    width: auto;
+    width: 250px;
   }
 }

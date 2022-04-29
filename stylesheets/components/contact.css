@@ -3,14 +3,18 @@
   background-image: none;
 }
 .contact__content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(375px, 1fr));
-  grid-column-gap: 24px;
+  grid-column: col-start / span 12;
 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0px;
   padding-top: 88px;
   padding-bottom: 88px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .contact__content {
-  padding: 0px;  }
+    flex-direction: column;
+    justify-self: center;
+    padding: 0px var(--spacing-md);  }
 }

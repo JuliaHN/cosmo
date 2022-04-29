@@ -9,6 +9,7 @@ body {
   font-size: var(--font-size-sm);
   line-height: 20px;
   font-weight: 400;
+  box-sizing: border-box;
 }
 a {
   text-decoration: none;
@@ -17,13 +18,10 @@ a {
 ul, nav {
   list-style: none;
 }
-p {
+p, h2, h3  {
   margin: 0px;
 }
-h2, h3 {
-  margin: 0px;
-}
-button, input[type="submit"], input[type="reset"] {
+button {
 	background: none;
 	color: inherit;
 	border: none;
@@ -32,7 +30,6 @@ button, input[type="submit"], input[type="reset"] {
 	cursor: pointer;
 	outline: inherit;
 }
-
 .title {
   margin: 0px
 }
@@ -40,7 +37,7 @@ button, input[type="submit"], input[type="reset"] {
   padding: 0px;
   margin: 0px;
 }
-.wrapper{
+.wrapper {
   display: grid;
   grid-template-columns: 100%;
   grid-template-areas:
@@ -49,30 +46,34 @@ button, input[type="submit"], input[type="reset"] {
       "footer";
 }
 .logo {
-  padding: 5px 0px;
+  height: 36px;
+  width: 102px;
 
   font-size: var(--font-size-lg);
 
+  text-align: center;
   background-color: var(--white);
+}
+.logo__text {
+  padding: 7px 0px;
 }
 .menu {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
-  padding: var(--spacing-xs);
+  padding: 0px var(--spacing-xs);
   justify-self: end;
 }
 .main {
-  grid-area: main;
-
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
   grid-row-gap: 88px;
+  grid-area: main;
 }
 .section {
-  padding: 0px var(--spacing-xxl);
   margin-left: auto;
   margin-right: auto;
+  padding-left: var(--spacing-xs);
 }
 .section__items {
   display: flex;
@@ -84,18 +85,29 @@ button, input[type="submit"], input[type="reset"] {
 }
 .button {
   justify-self: start;
-  padding: 8px 22px;
+  padding: var(--spacing-xs) var(--spacing-md);
   width: max-content;
   height: 36px;
 
   color: var(--white);
   background-color: var(--gray-500);
   border: none;
+
+  transition: all 0.2s ease-in-out;
+}
+.button:hover {
+  background-color: var(--gray-600);
+  transition: all 0.2s ease-in;
+}
+@media (max-width: 1200px) {
+  .section__title {
+    text-align: center;
+  }
+  .section__items {
+    justify-content: center;
+  }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .section {
-    padding: 0 var(--spacing-xl);
-  }
   .main {
     grid-row-gap: 40px;
   }
